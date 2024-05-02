@@ -14,6 +14,8 @@ spec:
     - path:
         type: PathPrefix
         value: /demo
+      rewrite:
+        uri: /
     backendRefs:
     - name: react-demo-app
       port: 80
