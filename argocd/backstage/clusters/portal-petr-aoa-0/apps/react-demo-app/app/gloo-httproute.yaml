@@ -13,13 +13,7 @@ spec:
   - matches:
     - path:
         type: PathPrefix
-        value: "/demo"
-    filters:
-    - type: URLRewrite
-      urlRewrite:
-        path:
-          type: ReplaceFullPath
-          replaceFullPath: /
+        value: "/"
     backendRefs:
     - name: react-demo-app
       port: 80
